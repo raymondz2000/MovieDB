@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>IMDB Movie Database</title>
+    <link rel="stylesheet" href="moviedata.css">
+    <script src="movie.js"> </script>
+    <link rel="icon" type="image/x-icon" href="HEADER.png" />
+    
+  
+</head>
+
+<!--body goes here-->
+<body>
+    <h1>IMDB Movie Database</h1>
+
+        <div class ="container" id ="client">
+            <div class="row">
+                <div class="col-10">
+                  <label for="fname">Enter your movie ID </label>
+                  
+                  
+                </div>
+                <div class="col-75">
+                   
+                    <input type="text" id="movieid" name="movieid" placeholder="Movie ID">
+                    <input type="submit" value="Search" onclick="get()">
+                </div>
+               
+            </div>
+
+       
+
+        <div class ="container" id="display" >
+             
+    
+        </div> 
+             
+        <script>var press = document.getElementById("movieid");
+               press.addEventListener("keydown", function (e) {
+                    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+                        get();
+                    }
+                });
+        </script>
+
+    <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-10">
+          <label for="fname">Your Name</label>
+        </div>
+
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name..">
+        </div>
+      </div>
+      
+      <div class="row">
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="Rate">Your Rate</label>
+        </div>
+        <div class="col-75">
+          <select id="rate" name="rate">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-10">
+          <label for="subject">Your Review</label>
+          
+        </div>
+        <div class="col-75">
+          <textarea id="comment" name="comment" placeholder="Write your review.." style="height:200px" ></textarea>
+          <input type="button" value="Add Review" onclick="getreviews()">
+
+          <script>var press = document.getElementById("comment");
+            press.addEventListener("keydown", function (e) {
+                 if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+                     getreviews();
+                 }
+             });
+     </script>
+
+        </div>
+      </div>
+    </form>
+  </div>
+            
+<footer>
+            <p>Author: Raymond Zhu</p>
+            <p><a href="mailto:hege@example.com ">Raymondzhu@cmail.carleton.ca</a></p>
+</footer>
+</body>
+
+</html>

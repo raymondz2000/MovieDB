@@ -1,0 +1,66 @@
+
+input[type=text], select, textarea {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid rgb(230, 22, 119);
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 21px
+
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 25px
+}
+
+input[type=submit] {
+  background-color: #af4c6a;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 34px;
+  cursor: pointer;
+  float:center;
+  font-size: 21px
+}
+input[type=button] {
+    background-color: #af4c6a;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 34px;
+    cursor: pointer;
+    float:center;
+    font-size: 21px
+  }
+ 
+
+.container {
+  border-radius: 30px;
+  background-color: #47758f;
+  padding: 20px;
+  font-size: 25px
+}
+
+.col-10 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display:table;
+  clear: both;
+}
+
+
